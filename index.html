@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Word Guess Game</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script src="javaSource.js"></script>
+  </head>
+  <body style="background:url(assets/images/connectwork.png)">
+
+    <style>
+        .jumbotron{
+            background-image: url("http://samyama.org/imgs/psychic-reading.jpg");
+            background-size: 100%;
+           
+        }
+
+        span,p,h1,h2,h3,h6{
+            color: white;
+            white-space:pre-wrap;
+            text-align: center;
+
+        }
+        .w1{
+            text-align: center;
+        }
+
+        .w3{
+            padding: 100px;
+
+        }
+        .colu1{
+            border-style: groove;
+            border-color: white;
+            height: 600px;
+
+        }
+        .colu2{
+            border-style: groove;
+            border-color: white;
+            height: 600px;
+            text-align: center;
+
+        }
+
+        .display-3,.lead{
+            text-align: center;
+        }
+
+        .my-2{
+            color: white;
+            border-style: solid;
+            border-width: 1px;
+        }
+
+       
+    </style>
+
+
+<!--Entorno de Prueba-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container" style="background:black">
+                    <h1 class="display-3" style="color:white">The Artists Game</h1>
+                    <p class="lead" style="color:white">Start Typing a letter and try to guess which famous singer or group i´m thinking</p>
+                    <hr class="my-2">
+                </div>
+            </div>            
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6 colu1">
+            <h3></p>Leters Picked:</h3>
+            <br>
+            <p class="letras"></p>
+            <br>
+            
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Remain Opportunities:</h4>
+                <h4 class="card-title" id="opor">0</h4>
+                <h4 class="card-title">Games WON:</h4>
+                <h4 class="card-title" id="jugan">0</h4>
+                
+              </div>
+              
+
+            </div>
+            <hr class="my-2">    
+                    <div class="row">
+                        <div class="col-sm-6">
+                                <a name="ba" id="botonNew" class="btn btn-success" href="#" role="button" onclick="reset()">NEW GAME</a>                            
+                        </div>
+                    </div>
+            <h6>the artist guessed was</h6>
+            <h2 id="wGuessed"></h2>
+        </div>
+        <div class="col-sm-6 colu2">
+                    <h1 class="w1">WORD TO GUESS</h1> 
+                    <h3 class="w3"></h3>
+                    <hr class="my-2">    
+                    <h2 class="anuncios"></h2> 
+                    <h2 class="anuncios2"></h2>
+                   
+                    
+                    
+       
+        </div>
+       
+        
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+                <p id="video"></p>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <script>
+            
+        reset();
+            
+
+
+
+    </script>
+  </body>
+</html>
